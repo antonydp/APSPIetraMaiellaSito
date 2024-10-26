@@ -1,14 +1,16 @@
-/* General Styles */
-* {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
 }
 
-body {
-  background-color: #f8f8f8;
-  color: #333;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* Header */
@@ -16,95 +18,179 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header .logo h1 {
-  margin-left: 10px;
-  font-size: 1.2em;
+header h1 {
+  font-size: 1.5em;
+  margin: 0;
 }
 
 header nav a {
-  margin-left: 20px;
-  text-decoration: none;
+  margin: 0 15px;
   color: #333;
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* Intro Section */
-.intro {
-  text-align: center;
-  padding: 40px 20px;
+header nav a:hover {
+  color: #555;
 }
 
-.intro h2 {
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.hero h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
-/* Mission, Vision, Values Section */
-.mission-vision-values {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #ffffff;
+.hero p {
+  font-size: 1.2em;
+  color: #777;
 }
 
-.mv-section {
+/* Mission, Vision, Values */
+.mvv-section {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+  justify-content: space-around;
+  text-align: center;
+  margin: 40px 0;
 }
 
-.mv-section div {
-  width: 30%;
+.mvv-section div {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.mv-section h4 {
-  font-size: 1.1em;
+.mvv-section h3 {
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Featured Projects */
-.featured-projects {
-  padding: 40px 20px;
-  text-align: center;
+.mvv-section p {
+  color: #777;
 }
 
-.featured-projects h3 {
-  font-size: 1.5em;
+/* Featured Projects */
+.featured-projects {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.featured-projects img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.featured-projects img:hover {
+  transform: scale(1.05);
+}
+
+/* Our History Section */
+.history-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.history-section h2 {
+  font-size: 1.8em;
   margin-bottom: 20px;
 }
 
-.projects-gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.history-section p {
+  max-width: 800px;
+  margin: auto;
+  color: #777;
 }
 
-.projects-gallery img {
-  width: 300px;
-  height: auto;
-  border-radius: 5px;
+/* Team Section */
+.team-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.team-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.team-member h4 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  color: #777;
+}
+
+/* Workshop Section */
+.workshop-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.workshop-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.workshop-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
+  background-color: #f9f9f9;
+  padding: 20px 0;
   text-align: center;
-  background-color: #ffffff;
-  border-top: 1px solid #e0e0e0;
+  color: #777;
 }
 
 footer p {
   margin: 5px 0;
-  color: #777;
 }
 
-.social-links a {
-  margin: 0 5px;
-  display: inline-block;
+footer .social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+footer .social-icons a:hover {
+  color: #555;
 }

@@ -4,34 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Attività - APS Pietra Maiella</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css"> <!-- Assicurati che il CSS unificato sia collegato qui -->
 </head>
 <body>
 
-<header>
-  <h1>Attività</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <!-- links alle altre pagine -->
-    </ul>
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="APS Pietra Maiella Logo"> <!-- Inserisci qui il logo -->
+    <h1>APS Pietra Maiella</h1>
+  </div>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="projects.html">Projects</a>
+    <a href="attivita.html" class="active">Attività</a> <!-- Aggiunta la classe active per evidenziare la pagina corrente -->
   </nav>
 </header>
 
-<main>
-  <section>
+<section class="container hero">
+  <h2>Attività</h2>
+  <p>Scopri le nostre iniziative e attività culturali dedicate alla valorizzazione dell'arte della pietra.</p>
+</section>
+
+<main class="container">
+  <section class="activity-card">
     <h2>Laboratori e Corsi</h2>
     <p>Offriamo laboratori estivi per bambini, corsi di scultura per principianti e workshop su tecniche avanzate di scalpellinatura.</p>
   </section>
 
-  <section>
+  <section class="activity-card">
     <h2>10 Giornate in Pietra</h2>
     <p>Evento annuale dedicato all'arte della scultura, con sessioni pratiche, esposizioni e dimostrazioni da parte di artisti esperti.</p>
   </section>
 </main>
 
-<footer>
-  <p>&copy; 2024 APS Pietra Maiella. Tutti i diritti riservati.</p>
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="contact-info">
+      <p>Email: contact@apspietramaiella.com</p>
+      <p>Telefono: +39 123 456 7890</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
 </footer>
 
 </body>
