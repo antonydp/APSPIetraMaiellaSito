@@ -1,62 +1,110 @@
-/* Stile generale per impostare l'immagine di sfondo */
-body {
-  font-family: Arial, sans-serif;
-  color: #fff;
+/* General Styles */
+* {
   margin: 0;
   padding: 0;
-  background: url("https://www.majellando.it/Experience/La%20citta%20della%20Pietra-%20pietrales/image-thumb__19127__ds-maxwidth1920/WhatsApp%20Image%202024-03-12%20at%2018.01.38.jpg") no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Imposta opacità per il testo leggibile */
-  z-index: 0;
+body {
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-header, main, footer {
-  position: relative;
-  z-index: 1; /* Porta il contenuto in primo piano rispetto allo sfondo */
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-/* Stile per il contenuto */
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+header .logo h1 {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
   text-align: center;
-  padding: 1rem;
-  color: #fff;
+  padding: 40px 20px;
 }
 
-nav ul {
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Mission, Vision, Values Section */
+.mission-vision-values {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.mv-section {
   display: flex;
   justify-content: center;
-  list-style: none;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-nav ul li {
-  margin: 0 1rem;
+.mv-section div {
+  width: 30%;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.mv-section h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.intro, .highlights {
+/* Featured Projects */
+.featured-projects {
+  padding: 40px 20px;
   text-align: center;
-  padding: 2rem;
 }
 
+.featured-projects h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.projects-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projects-gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Footer */
 footer {
+  padding: 20px;
   text-align: center;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.7); /* Opacità leggermente più scura per il footer */
-  color: #fff;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #777;
+}
+
+.social-links a {
+  margin: 0 5px;
+  display: inline-block;
 }
